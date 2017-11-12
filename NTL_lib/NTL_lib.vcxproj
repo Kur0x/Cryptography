@@ -23,7 +23,7 @@
     <ProjectGuid>{D58E4E6B-2046-4129-B800-F686666189C8}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>NTL_lib</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -35,7 +35,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v141_xp</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -115,6 +115,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4146;4554;4101;4099;4819;4244;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -149,73 +150,15 @@
     <ClCompile Include="..\WinNTL-10_5_0\src\fileio.cpp" />
     <ClCompile Include="..\WinNTL-10_5_0\src\GetPID.cpp" />
     <ClCompile Include="..\WinNTL-10_5_0\src\GetTime.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\GF2.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\GF2E.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\GF2EX.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\GF2EXFactoring.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\GF2X.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\GF2X1.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\GF2XFactoring.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\GF2XVec.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\G_LLL_FP.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\G_LLL_QP.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\G_LLL_RR.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\G_LLL_XD.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\HNF.cpp" />
     <ClCompile Include="..\WinNTL-10_5_0\src\lip.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\LLL.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\LLL_FP.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\LLL_QP.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\LLL_RR.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\LLL_XD.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\lzz_p.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\lzz_pE.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\lzz_pEX.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\lzz_pEXFactoring.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\lzz_pX.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\lzz_pX1.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\lzz_pXCharPoly.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\lzz_pXFactoring.cpp" />
     <ClCompile Include="..\WinNTL-10_5_0\src\MatPrime.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\mat_GF2.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\mat_GF2E.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\mat_lzz_p.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\mat_lzz_pE.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\mat_poly_lzz_p.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\mat_poly_ZZ.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\mat_poly_ZZ_p.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\mat_RR.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\mat_ZZ.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\mat_ZZ_p.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\mat_ZZ_pE.cpp" />
     <ClCompile Include="..\WinNTL-10_5_0\src\quad_float.cpp" />
     <ClCompile Include="..\WinNTL-10_5_0\src\RR.cpp" />
     <ClCompile Include="..\WinNTL-10_5_0\src\thread.cpp" />
     <ClCompile Include="..\WinNTL-10_5_0\src\tools.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\vec_GF2.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\vec_GF2E.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\vec_lzz_p.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\vec_lzz_pE.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\vec_RR.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\vec_ZZ.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\vec_ZZ_p.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\vec_ZZ_pE.cpp" />
     <ClCompile Include="..\WinNTL-10_5_0\src\WordVector.cpp" />
     <ClCompile Include="..\WinNTL-10_5_0\src\xdouble.cpp" />
     <ClCompile Include="..\WinNTL-10_5_0\src\ZZ.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\ZZVec.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\ZZX.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\ZZX1.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\ZZXCharPoly.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\ZZXFactoring.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\ZZ_p.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\ZZ_pE.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\ZZ_pEX.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\ZZ_pEXFactoring.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\ZZ_pX.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\ZZ_pX1.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\ZZ_pXCharPoly.cpp" />
-    <ClCompile Include="..\WinNTL-10_5_0\src\ZZ_pXFactoring.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -2703,7 +2703,7 @@ void GenGermainPrime(ZZ& n, long k, long err)
 
    for (;;) {
       iter++;
-
+	  
       RandomLen(n, k);
       if (!IsOdd(n)) add(n, n, 1);
 
@@ -2731,16 +2731,18 @@ void GenGermainPrime(ZZ& n, long k, long err)
       }
 
       if (!sieve_passed) continue;
+	  putchar('.');
 
 
       if (MillerWitness(n, two)) continue;
-
+	  putchar('+');
       // n1 = 2*n+1
       mul(n1, n, 2);
       add(n1, n1, 1);
 
 
       if (MillerWitness(n1, two)) continue;
+	  
 
       // now do t M-R iterations...just to make sure
  
@@ -2772,9 +2774,10 @@ void GenGermainPrime(ZZ& n, long k, long err)
             break;
          }
       }
-
+	  putchar('/');
       if (MR_passed) break;
    }
+   putchar('\n');
 }
 
 long GenGermainPrime_long(long k, long err)

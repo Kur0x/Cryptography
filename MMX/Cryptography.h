@@ -1,4 +1,5 @@
-﻿#pragma once
+﻿#ifndef CA_H
+#define CA_H
 #include <NTL/ZZ.h>
 #define RSA_METHOD 1
 #define ELGAMAL_METHOD 2
@@ -15,3 +16,4 @@ public:
 private:
 
 };
+#endif

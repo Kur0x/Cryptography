@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.8
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NTL_macros", "NTL_macros\NTL_macros.vcxproj", "{6382C95C-8B3F-492B-B696-A88679D52653}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NTL_lib", "NTL_lib\NTL_lib.vcxproj", "{D58E4E6B-2046-4129-B800-F686666189C8}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcxproj", "{AA7E7873-19D0-4950-A2E1-8FA11A3E6044}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MMX", "MMX\MMX.vcxproj", "{6BF82B01-16EC-40CA-860B-7AFF824528BC}"
 EndProject
@@ -35,14 +33,6 @@ Global
 		{D58E4E6B-2046-4129-B800-F686666189C8}.Release|x64.Build.0 = Release|x64
 		{D58E4E6B-2046-4129-B800-F686666189C8}.Release|x86.ActiveCfg = Release|Win32
 		{D58E4E6B-2046-4129-B800-F686666189C8}.Release|x86.Build.0 = Release|Win32
-		{AA7E7873-19D0-4950-A2E1-8FA11A3E6044}.Debug|x64.ActiveCfg = Debug|x64
-		{AA7E7873-19D0-4950-A2E1-8FA11A3E6044}.Debug|x64.Build.0 = Debug|x64
-		{AA7E7873-19D0-4950-A2E1-8FA11A3E6044}.Debug|x86.ActiveCfg = Debug|Win32
-		{AA7E7873-19D0-4950-A2E1-8FA11A3E6044}.Debug|x86.Build.0 = Debug|Win32
-		{AA7E7873-19D0-4950-A2E1-8FA11A3E6044}.Release|x64.ActiveCfg = Release|x64
-		{AA7E7873-19D0-4950-A2E1-8FA11A3E6044}.Release|x64.Build.0 = Release|x64
-		{AA7E7873-19D0-4950-A2E1-8FA11A3E6044}.Release|x86.ActiveCfg = Release|Win32
-		{AA7E7873-19D0-4950-A2E1-8FA11A3E6044}.Release|x86.Build.0 = Release|Win32
 		{6BF82B01-16EC-40CA-860B-7AFF824528BC}.Debug|x64.ActiveCfg = Debug|x64
 		{6BF82B01-16EC-40CA-860B-7AFF824528BC}.Debug|x64.Build.0 = Debug|x64
 		{6BF82B01-16EC-40CA-860B-7AFF824528BC}.Debug|x86.ActiveCfg = Debug|Win32
